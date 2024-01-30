@@ -1,0 +1,7 @@
+<h1>Welcome to Book Application!</h1>
+
+<h2>CRUD Functions</h2>
+<%= link_to "View All Books", books_path, class: "btn btn-primary" %>
+<%= link_to "Add a New Book", new_book_path, class: "btn btn-success" %>
+<%= link_to "Edit a Book", edit_book_path(1), class: "btn btn-warning" %>
+<%= link_to "Delete a Book", book_path(1), method: :delete, data: { confirm: "Are you sure?" }, class: "btn btn-danger" %>
